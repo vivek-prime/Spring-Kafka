@@ -1,0 +1,15 @@
+# configuration of kafka consumer and producer
+spring:
+    kafka:
+        consumer:
+            auto-offse-reset: earliest
+            bootstrap-servers: localhost:90092
+            group-id: ConsumerGroup
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        producer:
+            bootstrap-servers: localhost:9092
+            key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+            value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+
